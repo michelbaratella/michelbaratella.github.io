@@ -4,6 +4,6 @@ export default {
   ssr: false,
   basename: "/portfolio/",
   async prerender() {
-    return ["/", "/about", "/projects"]; 
+    return ["/"]; 
   },
 } satisfies Config;
