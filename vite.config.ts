@@ -7,5 +7,4 @@ export default defineConfig({
   resolve: {
     tsconfigPaths: true,
   },
-  base: "michelbaratella.github.io"
 });
