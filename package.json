@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "https://michelbaratella.github.io/portfolio",
   "private": true,
   "type": "module",
   "scripts": {
