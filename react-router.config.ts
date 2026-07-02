@@ -4,6 +4,6 @@ export default {
   ssr: false,
   basename: "/portfolio/",
   async prerender() {
-    return ["/"]; // Explicitly list paths to generate physical .html files
+    return ["/", "/about", "/projects"]; 
   },
 } satisfies Config;
