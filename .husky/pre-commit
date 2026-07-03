@@ -1,0 +1,5 @@
+# 1. Typecheck the entire project
+npx tsc --noEmit
+
+# 2. Lint only the files staged for this commit
+npx lint-staged
