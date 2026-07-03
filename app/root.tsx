@@ -41,6 +41,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+export function meta() {
+  return [
+    { title: "Michel's Portfolio" },
+    { name: "description", content: "Welcome to my Github page!" },
+  ];
+}
+
 export default function App() {
   return <Outlet />;
 }
