@@ -1,10 +1,10 @@
-export function meta() {
-  return [
-    { title: "Michel's Portfolio" },
-    { name: "description", content: "Welcome to my Github page!" },
-  ];
-}
+import StyledLink from "~/components/StyledLink";
 
 export default function Home() {
-  return <p>Coming soon...</p>;
+  return (
+    <>
+      <p>This is the home page</p>
+      <StyledLink to="/about">About</StyledLink>
+    </>
+  );
 }
