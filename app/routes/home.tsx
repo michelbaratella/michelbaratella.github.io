@@ -1,6 +1,4 @@
-import type { Route } from "./+types/home";
-
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
     { title: "Michel's Portfolio" },
     { name: "description", content: "Welcome to my Github page!" },
@@ -8,6 +6,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  // return <Welcome />;
-  return <p>Coming soon...</p>
+  return <p>Coming soon...</p>;
 }
