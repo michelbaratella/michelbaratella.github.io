@@ -4,15 +4,15 @@ import { Button, Center, Tooltip } from "@mantine/core";
 const DEFAULT_ICON_SIZE = 32;
 
 interface IconProps {
-  size: number | string;
-  alt?: string;
+  readonly size: number | string;
+  readonly alt?: string;
 }
 
 interface NavIconButtonProps {
-  alt: string;
-  icon: React.ComponentType<IconProps>;
-  onClick?: () => void;
-  props?: React.ComponentProps<typeof Button>;
+  readonly alt: string;
+  readonly icon: React.ComponentType<IconProps>;
+  readonly onClick?: () => void;
+  readonly props?: React.ComponentProps<typeof Button>;
 }
 
 export default function NavIconButton({
