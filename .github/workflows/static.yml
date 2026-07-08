@@ -44,6 +44,13 @@ jobs:
 
       - name: Build application
         run: npm run build # Assumes this script creates the 'build/client' directory
+        env:
+          VITE_DEVELOPER_NAME: ${{ secrets.VITE_DEVELOPER_NAME }}
+          VITE_PHONE_NUMBER: ${{ secrets.VITE_PHONE_NUMBER }}
+          VITE_WHATSAPP_MESSAGE: ${{ secrets.VITE_WHATSAPP_MESSAGE }}
+          VITE_EMAIL_ADDRESS: ${{ secrets.VITE_EMAIL_ADDRESS }}
+          VITE_LINKEDIN_URL: ${{ secrets.VITE_LINKEDIN_URL }}
+          VITE_GITHUB_URL: ${{ secrets.VITE_GITHUB_URL }}
       # -------------------------------------------
 
       - name: Setup Pages
