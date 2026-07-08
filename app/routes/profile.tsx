@@ -1,3 +1,10 @@
+import Markdown from "react-markdown";
+import myMarkdownFile from "../assets/curriculum.md?raw";
+
 export default function Profile() {
-  return <p>This is the profile page.</p>;
+  return (
+    <div className="markdown">
+      <Markdown>{myMarkdownFile}</Markdown>
+    </div>
+  );
 }

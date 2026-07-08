@@ -111,12 +111,15 @@ export default function AppShellContent() {
 
       <AppShell.Main>
         {clipboard.copied && (
-          <Alert
-            variant="light"
-            color="green"
-            title="Email copied!"
-            icon={<CopyIcon size={42} />}
-          />
+          <div className="fixed">
+            <Alert
+              variant="light"
+              color="green"
+              title="Email copied!"
+              icon={<CopyIcon size={42} />}
+              className="fixed"
+            />
+          </div>
         )}
         <Outlet />
       </AppShell.Main>
