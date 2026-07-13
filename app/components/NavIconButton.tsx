@@ -24,7 +24,16 @@ export default function NavIconButton({
   return (
     <Center maw={400} h={100}>
       <Tooltip label={alt} position="right" withArrow>
-        <Button onClick={onClick} variant="subtle" color="gray" {...props}>
+        <Button
+          onClick={onClick}
+          variant="subtle"
+          color="gray"
+          size="xl"
+          radius="xl"
+          p={0}
+          style={{ width: "60px", height: "60px" }}
+          {...props}
+        >
           <IconComponent size={DEFAULT_ICON_SIZE} alt={alt} />
         </Button>
       </Tooltip>
