@@ -2,7 +2,7 @@ import Markdown from "react-markdown";
 import myMarkdownFile from "../assets/curriculum.md?raw";
 import { motion } from "motion/react";
 
-const HEADING_REGEX = /^#{1,6}[ \t]+([^\r\n]+)$/m;
+const HEADING_REGEX = /^#{1,6}[ \t]+([^\r\n]+)/m;
 
 // Helper function to generate a stable slug from section content
 function getSectionKey(content: string, fallbackIndex: number): string {
