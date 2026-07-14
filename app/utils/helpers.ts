@@ -115,7 +115,7 @@ function parseCompanyBlock(block: string): CompanyTimeline | null {
 function extractCompanyName(companyHeaderLine: string): string {
   return companyHeaderLine
     .replace(/^###\s+/, "")
-    .replaceAll(/\*\*/g, "")
+    .replaceAll("**", "")
     .trim();
 }
 
@@ -149,7 +149,7 @@ function isBulletLine(trimmed: string): boolean {
 
 function parseRoleLine(trimmed: string): WorkEvent {
   const [rolePart, datePart] = trimmed.split("|");
-  const title = rolePart.replaceAll(/\*\*/g, "").trim();
+  const title = rolePart.replaceAll("**", "").trim();
   const subtitle = datePart?.replace(/[_*]/g, "").trim();
 
   return {
