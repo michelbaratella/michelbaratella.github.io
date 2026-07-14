@@ -90,67 +90,85 @@ export function formatProfessionalTimeline({ body }: SplitSection) {
 }
 
 function adaptExperienceToTimeline(bodyText: string): CompanyTimeline[] {
-  // 1. Split by '### ' to isolate each company block
-  const companyBlocks = bodyText.split(/(?=###\s+)/);
-  const timelineData: CompanyTimeline[] = [];
+  const blocks = bodyText
+    .split(/(?=###\s+)/)
+    .map((block) => block.trim())
+    .filter(Boolean);
 
-  for (const block of companyBlocks) {
-    if (!block.trim()) continue;
+  return blocks
+    .map(parseCompanyBlock)
+    .filter((timeline): timeline is CompanyTimeline => timeline !== null);
+}
 
-    const lines = block.split(/\r?\n/);
+function parseCompanyBlock(block: string): CompanyTimeline | null {
+  const lines = block.split(/\r?\n/);
+  const companyName = extractCompanyName(lines.shift() || "");
 
-    // Extract company name from the ### header (removing markdown formatting)
-    const companyHeaderLine = lines.shift() || "";
-    const companyName = companyHeaderLine
-      .replace(/^###\s+/, "")
-      .replace(/\*\*/g, "")
-      .trim();
+  if (!companyName) {
+    return null;
+  }
 
-    const events: WorkEvent[] = [];
-    let currentEvent: WorkEvent | null = null;
+  const events = buildCompanyEvents(lines);
+  return events.length > 0 ? { company: companyName, events } : null;
+}
 
-    for (const line of lines) {
-      const trimmed = line.trim();
-      if (!trimmed) continue;
+function extractCompanyName(companyHeaderLine: string): string {
+  return companyHeaderLine
+    .replace(/^###\s+/, "")
+    .replaceAll(/\*\*/g, "")
+    .trim();
+}
 
-      // Detect a Role Line: **Role Name** | _Date Range_
-      if (trimmed.startsWith("**") && trimmed.includes("|")) {
-        // Save the previous event if there was one
-        if (currentEvent) {
-          events.push(currentEvent);
-        }
+function buildCompanyEvents(lines: string[]): WorkEvent[] {
+  const events: WorkEvent[] = [];
+  let currentEvent: WorkEvent | null = null;
 
-        const [rolePart, datePart] = trimmed.split("|");
-        const title = rolePart.replace(/\*\*/g, "").trim();
-        const subtitle = datePart
-          ? datePart.replace(/[_*]/g, "").trim()
-          : undefined;
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
 
-        currentEvent = {
-          title,
-          subtitle,
-          bullets: [],
-        };
-      }
-      // Detect a Bullet Line: - bullet text
-      else if (trimmed.startsWith("-") && currentEvent) {
-        const bulletText = trimmed.replace(/^-\s+/, "").trim();
-        currentEvent.bullets.push(bulletText);
-      }
-    }
-
-    // Push the final event of the company block
-    if (currentEvent) {
-      events.push(currentEvent);
-    }
-
-    if (companyName && events.length > 0) {
-      timelineData.push({
-        company: companyName,
-        events,
-      });
+    if (isRoleLine(trimmed)) {
+      pushCurrentEvent(events, currentEvent);
+      currentEvent = parseRoleLine(trimmed);
+    } else if (isBulletLine(trimmed) && currentEvent) {
+      currentEvent.bullets.push(parseBulletLine(trimmed));
     }
   }
 
-  return timelineData;
+  pushCurrentEvent(events, currentEvent);
+  return events;
 }
+
+function isRoleLine(trimmed: string): boolean {
+  return trimmed.startsWith("**") && trimmed.includes("|");
+}
+
+function isBulletLine(trimmed: string): boolean {
+  return trimmed.startsWith("-");
+}
+
+function parseRoleLine(trimmed: string): WorkEvent {
+  const [rolePart, datePart] = trimmed.split("|");
+  const title = rolePart.replaceAll(/\*\*/g, "").trim();
+  const subtitle = datePart?.replace(/[_*]/g, "").trim();
+
+  return {
+    title,
+    subtitle: subtitle || undefined,
+    bullets: [],
+  };
+}
+
+function parseBulletLine(trimmed: string): string {
+  return trimmed.replace(/^-\s+/, "").trim();
+}
+
+function pushCurrentEvent(events: WorkEvent[], currentEvent: WorkEvent | null) {
+  if (currentEvent) {
+    events.push(currentEvent);
+  }
+}
+
+export const normalizeAndCreateKey = (text: string) => {
+  return text.slice(0, 12).trim().replace(/\s+/g, "-");
+};

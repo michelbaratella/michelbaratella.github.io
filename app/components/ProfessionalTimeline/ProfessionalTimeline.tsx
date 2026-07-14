@@ -1,6 +1,9 @@
 import { Timeline, Text, Stack, Title, List } from "@mantine/core";
 import { CheckIcon } from "@phosphor-icons/react";
-import { formatProfessionalTimeline } from "~/utils/helpers";
+import {
+  formatProfessionalTimeline,
+  normalizeAndCreateKey,
+} from "~/utils/helpers";
 import {
   containerVariants,
   itemVariants,
@@ -49,7 +52,9 @@ export default function ProfessionalTimeline({ section }: DefaultSectionProps) {
                   {/* Bullet Points */}
                   <List size="sm" mt="sm" spacing="xs" withPadding>
                     {event.bullets.map((bullet, bIndex) => (
-                      <List.Item key={bIndex}>
+                      <List.Item
+                        key={`${normalizeAndCreateKey(bullet)}-${bIndex}`}
+                      >
                         <Text size="sm" className={textColor}>
                           {bullet}
                         </Text>

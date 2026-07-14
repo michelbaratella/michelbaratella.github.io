@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 export default function DefaultPageAnimation({
   children,
 }: {
-  children: React.ReactNode;
+  readonly children: React.ReactNode;
 }) {
   return (
     <motion.div

@@ -14,8 +14,8 @@ export default function NavBarContent({
   toggle,
   clipboard,
 }: {
-  toggle: () => void;
-  clipboard: UseClipboardReturnValue;
+  readonly toggle: () => void;
+  readonly clipboard: UseClipboardReturnValue;
 }) {
   const emailButtonText = clipboard.copied
     ? "Email copied!"

@@ -1,7 +1,7 @@
 import type { SplitSection } from "~/utils/helpers";
 
 export interface DefaultSectionProps {
-  section: SplitSection;
-  index?: number;
-  key: string;
+  readonly section: SplitSection;
+  readonly index?: number;
+  readonly key: string;
 }

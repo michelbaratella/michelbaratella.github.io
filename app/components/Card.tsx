@@ -26,26 +26,25 @@ export default function Card({ section, index = 0 }: DefaultSectionProps) {
   const y = useTransform(scrollYProgress, [0, 1], [200, 0]);
 
   // The x-axis translation is conditional based on whether it's desktop or mobile
-  const startX = isDesktop ? (isEven ? 250 : -250) : 0;
-  const endX = isDesktop ? (isEven ? -250 : 250) : 0;
+  const [startXAxis, endXAxis] = isEven ? [250, -250] : [-250, 250];
+  const startX = isDesktop ? startXAxis : 0;
+  const endX = isDesktop ? endXAxis : 0;
   const x = useTransform(scrollYProgress, [0, 1], [startX, endX]);
 
   return (
-    <>
-      <motion.div
-        ref={cardRef}
-        style={{ scale, opacity, y, x }}
-        id={`section-${index}`}
-        className={`bg-gray-100 w-full max-w-lg rounded-2xl p-6 m-6 shadow-2xl transition-shadow duration-300 hover:shadow-md mx-auto
+    <motion.div
+      ref={cardRef}
+      style={{ scale, opacity, y, x }}
+      id={`section-${index}`}
+      className={`bg-gray-100 w-full max-w-lg rounded-2xl p-6 m-6 shadow-2xl transition-shadow duration-300 hover:shadow-md mx-auto
         ${isEven ? "md:-translate-x-8" : "md:translate-x-8"}`}
-      >
-        <span className="text-xs font-semibold uppercase tracking-wider text-blue-500 markdown">
-          <Markdown>{section.header?.raw}</Markdown>
-        </span>
-        <div className="mt-3 text-sm leading-relaxed text-gray-800 markdown">
-          <Markdown>{section.body}</Markdown>
-        </div>
-      </motion.div>
-    </>
+    >
+      <span className="text-xs font-semibold uppercase tracking-wider text-blue-500 markdown">
+        <Markdown>{section.header?.raw}</Markdown>
+      </span>
+      <div className="mt-3 text-sm leading-relaxed text-gray-800 markdown">
+        <Markdown>{section.body}</Markdown>
+      </div>
+    </motion.div>
   );
 }

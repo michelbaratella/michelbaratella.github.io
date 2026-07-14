@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Alert } from "@mantine/core";
 import { CopyIcon } from "@phosphor-icons/react";
 
-export default function AnimatedAlert({ isOn }: { isOn: boolean }) {
+export default function AnimatedAlert({ isOn }: { readonly isOn: boolean }) {
   return (
     <AnimatePresence>
       {isOn && (
