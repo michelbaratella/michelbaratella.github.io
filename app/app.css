@@ -6,12 +6,18 @@
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+@custom-variant dark (&:where([data-mantine-color-scheme="dark"], [data-mantine-color-scheme="dark"] *));
+
+html[data-mantine-color-scheme="dark"] {
+  --mantine-color-body: theme(--color-gray-950) !important;
+}
+
 html,
 body {
   @apply bg-white dark:bg-gray-950;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+  @media (prefers-color-scheme: light) {
+    color-scheme: light;
   }
 
   .markdown > * {

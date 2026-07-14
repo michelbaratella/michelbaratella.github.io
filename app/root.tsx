@@ -8,8 +8,8 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
-import "./app.css";
 import "@mantine/core/styles.css";
+import "./app.css";
 import {
   ColorSchemeScript,
   MantineProvider,
@@ -36,7 +36,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-        <ColorSchemeScript />
+        <ColorSchemeScript defaultColorScheme="auto" />
         <Meta />
         <Links />
       </head>
@@ -50,8 +50,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export function meta() {
+  const headerTitle = import.meta.env.VITE_DEVELOPER_NAME;
   return [
-    { title: "Michel's Portfolio" },
+    { title: `${headerTitle}'s Portfolio` },
     { name: "description", content: "Welcome to my Github page portfolio" },
   ];
 }
