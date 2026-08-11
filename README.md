@@ -23,7 +23,7 @@ Basically, this is a portfolio website that you can fork on GitHub and make your
 
 ## 📹 Video Tutorial
 
-> 📌 _A video/tutorial on how to set this up will be posted on YouTube and linked here soon!_
+[![Watch the video](https://img.youtube.com/vi/TPd-zrYgFjE/0.jpg)](https://www.youtube.com/watch?v=TPd-zrYgFjE)
 
 ---
 
@@ -100,7 +100,7 @@ Basicamente, este é um site de portfólio que você pode fazer um fork no GitHu
 
 ## 📹 Tutorial
 
-> 📌 _Um vídeo/tutorial sobre como configurar isso será postado no YouTube e linkado aqui em breve!_
+[![Veja o video](https://img.youtube.com/vi/TPd-zrYgFjE/0.jpg)](https://www.youtube.com/watch?v=TPd-zrYgFjE)
 
 ---
 
