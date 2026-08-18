@@ -30,7 +30,7 @@ Results-driven **Senior Frontend Developer** with extensive IT experience, trans
 
 ### **ACT Digital**
 
-**Senior Frontend Developer (Contracted to AB-InBev)** | _April 2025 – Present_
+**Senior Frontend Developer (Contracted to AB-InBev)** | _April 2025 – August 2026_
 
 - Engineered highly complex frontend solutions and core application architectures.
 - Leveraged advanced AI tooling (OpenAI Codex, Claude Cursor) with custom rules, skills, and Model Context Protocol (MCP) agents to automate ticket management, epics/stories breakdown, and Atlassian documentation.
