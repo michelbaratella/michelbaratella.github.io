@@ -30,7 +30,7 @@
 
 ### **ACT Digital**
 
-**Desenvolvedor Frontend Sênior (Alocado na AB-InBev)** | _Abril de 2025 – Presente_
+**Desenvolvedor Frontend Sênior (Alocado na AB-InBev)** | _Abril de 2025 – Agosto de 2026_
 
 - Projetei soluções frontend de alta complexidade e arquiteturas de aplicações centrais.
 - Utilizei ferramentas avançadas de IA (OpenAI Codex, Claude Cursor) com regras customizadas, skills e agentes do Model Context Protocol (MCP) para automatizar o gerenciamento de tickets, detalhamento de epics/stories e documentação no Atlassian.
