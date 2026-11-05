@@ -1,96 +1,91 @@
 # **Michel Henrique Baratella Silva**
 
-**Senior Frontend Developer | React | TypeScript | UI/UX Optimization**
+**Full-Stack Software Engineer | React | Node.js | Angular | Java | Spring Boot**
 
-📍 Valinhos, São Paulo, Brazil | 📱 +55 19 99120-7300 | ✉️ baratella2@gmail.com
-
-🔗 [linkedin.com/in/michelbaratella](https://www.linkedin.com/in/michelbaratella)
+📍 Valinhos, São Paulo, Brazil | ✉️ mhbs3@yahoo.com | 🔗 [linkedin.com/in/michelbaratella](https://www.linkedin.com/in/michelbaratella)
 
 ---
 
 ## **Professional Summary**
 
-Results-driven **Senior Frontend Developer** with extensive IT experience, transitioning from a strong background in Software Quality Assurance (QA) and Subject Matter Expertise into high-impact Web Development. Currently specializing in Frontend Software Engineering utilizing the **React/TypeScript** ecosystem. Proven track record of delivering complex, highly scalable applications, including cutting-edge AI LLM-integrated solutions. Deep expertise across the full software development lifecycle—spanning requirements analysis, risk mitigation, modern CI/CD pipeline management, and Agile/Scrum/SAFe methodologies.
+Results-driven **Full-Stack Software Engineer** with over 15 years of experience in IT, specializing in **React/Angular frontends** and **Java/Spring Boot and Node.js backends**. Expertise in API integration, relational DBMS optimization, CI/CD pipelines, and software quality assurance. Proven track record of delivering scalable enterprise applications, microservices, and AI LLM-integrated tooling within Agile/Scrum and SAFe environments.
 
 ---
 
 ## **Core Skills**
 
-- **Frontend Development:** React, Angular 4, TypeScript, JavaScript (ES6+), HTML5, CSS3
-- **State Management & Data:** TanStack, Zustand, React Context API, GraphQL, Axios, JSON
-- **Styling & Animation:** Styled Components, Tailwind CSS, Framer Motion, Shadow DOM
-- **AI & Automation:** LLM Integration (OpenAI Codex, Claude Cursor), MCP for automated ticket management
-- **Testing Frameworks:** Jest, React Testing Library (RTL), Playwright, Vitest, JSDOM, Parasoft SOAtest
-- **DevOps & Security:** GitHub Actions, Jenkins, SonarScan, Snyk, Azure MSAL Authentication, Cloudflare
+- **Frontend:** React, Angular, TypeScript, JavaScript (ES6+), Zustand, TanStack, Tailwind CSS, Styled Components, Progressive Web Apps (PWA)
+- **Backend:** Java, Spring Boot, Node.js, RESTful APIs, GraphQL, Microservices, Python, Bash Scripting
+- **Databases & Schema:** PostgreSQL, MongoDB, SQL, JSON Schema, XML
+- **AI & Automation:** LLM Integration (OpenAI Codex, Claude Cursor, Copilot), MCP for automated SCRUM management & documentation
+- **DevOps & Infrastructure:** CI/CD (GitHub Actions, Jenkins, Groovy), Docker, AWS Lambda, UNIX/RHEL, Cloudflare
+- **Security & Quality:** Azure MSAL Authentication, SonarQube / SonarScan, Snyk, Jest, React Testing Library (RTL), Playwright, Vitest, SOAtest
 - **Methodologies:** SAFe, Agile, Scrum, JIRA, Confluence, HP ALM
 
 ---
 
 ## **Professional Experience**
 
-### **ACT Digital**
+### **ACT Digital (Zé Delivery, AB-InBev Global)**
 
-**Senior Frontend Developer (Contracted to AB-InBev)** | _April 2025 – August 2026_
+**Senior Frontend Developer** | _April 2025 – August 2026_
 
-- Engineered highly complex frontend solutions and core application architectures.
-- Leveraged advanced AI tooling (OpenAI Codex, Claude Cursor) with custom rules, skills, and Model Context Protocol (MCP) agents to automate ticket management, epics/stories breakdown, and Atlassian documentation.
-- Implemented secure authentication architectures using Azure MSAL.
-- Optimized application performance and state management using Zustand, TanStack, and React Context; integrated seamless data fetching via GraphQL and Axios.
-- Built rich, fluid user interfaces with Tailwind CSS, Styled Components, and Framer Motion.
-- Developed Progressive Web Applications (PWAs) with a strict focus on SEO performance, web vitals, and accessibility.
-- Architected robust CI/CD pipelines via GitHub Actions, enforcing code quality and security standards via ESLint, TypeScript compilation, SonarScan, and Snyk vulnerability tracking.
-- Authored comprehensive test suites ranging from static, unit, and integration tests to end-to-end (E2E) coverage using Jest, RTL, Playwright, and Vitest.
-- Utilized Shadow DOM and custom Design Systems to achieve style encapsulation for external secure script injections.
-- Implemented internationalization (i18n) workflows for dynamic multi-language translation and Markdown rendering.
+- Engineered scalable React/TypeScript applications with TanStack, Zustand, Context API, and GraphQL/Axios API integrations.
+- Integrated cutting-edge AI LLM agents (OpenAI Codex, Claude Cursor, Copilot, MCP) to automate Jira/Confluence SCRUM workflows, epic/story breakdowns, and software documentation.
+- Implemented secure authentication architectures using Azure MSAL; enforced code quality, static analysis, and security checks (ESLint, SonarScan, Snyk) within GitHub Actions CI/CD pipelines.
+- Developed Progressive Web Applications (PWAs) with strict focus on performance, SEO, web vitals, and dynamic multi-language (i18n) support.
+- Authored E2E, integration, and unit test suites using Jest, React Testing Library (RTL), Playwright, and Vitest.
 
-### **IBM**
+### **IBM Brasil (Petrobrás)**
 
-**Frontend Developer** | _August 2024 – April 2025_
+**Mid-Level Frontend Developer** | _December 2024 – April 2025_
 
-- Delivered modern web features utilizing React and integrated unit testing with Jest.
-- Collaborated in high-performing teams under the Agile SAFe framework and automated deployment workflows via Jenkins.
+- Built responsive, interactive React dashboard interfaces backed by Python REST APIs.
+- Managed state management, API data contracts, and client-side performance optimization.
+- Developed comprehensive unit test coverage for React components to ensure code stability and minimize production defects within an Agile/SAFe environment.
 
-**Software Engineer** | _December 2020 – August 2024_
+### **IBM Brasil (AT&T)**
 
-- Developed full-stack features using React, Python, Java, and Bash Shell scripting.
-- Managed database design, queries, and data manipulation using PostgreSQL.
-- Automated infrastructure deployment and integration testing using Jenkins CI/CD pipelines configured with Groovy.
-- Managed software patching, security vulnerability remediation, and system updates across UNIX RHEL servers.
-- Active contributor in core Agile Scrum iterations, bridging cross-functional collaboration between development lanes.
+**Software Engineer / Full-Stack Developer** | _December 2020 – December 2024_
 
-**Frontend Developer** | _December 2017 – December 2020_
+- Developed full-stack features linking React web interfaces with Java, Python, and Bash backend services.
+- Designed, queried, and optimized PostgreSQL databases to support high-throughput operations.
+- Automated build pipelines and integration testing using Jenkins CI/CD configured with Groovy on UNIX RHEL servers.
+- Managed system patching, UNIX vulnerability remediation, and Git repository administration (GitHub/CodeCloud).
 
-- Programmed dynamic frontend applications using Angular 4.
-- Managed source control and environment deployments using Git, ClearCase, and automated Jenkins workflows.
-- Handled cross-server file management and configuration utilizing WinSCP and PuTTY.
+### **IBM Brasil (T-Mobile / Sprint)**
 
-**Subject Matter Expert (SME)** | _September 2015 – December 2017_
+**Junior Frontend Developer** | _December 2017 – December 2020_
 
-- Led scope definition, demand analysis, Level of Effort (LOE) estimation, and project risk reporting.
-- Mapped complex business requirements to functional test cases, driving regression testing and Technical Readiness Review (TRR) documentation.
-- Overseed User Acceptance Testing (UAT) planning, defect prioritization, and production escape analysis.
+- Participated in the retail management system modernization project, integrating Angular frontend applications with Java Spring RESTful web services.
+- Managed source control and environment deployments using Git, ClearCase, WinSCP, and automated Jenkins workflows.
 
-### **Stefanini Group**
+### **IBM Brasil (DirecTV)**
 
-**Application Test Analyst (Embedded at IBM)** | _April 2013 – September 2015_
+**Software Quality Specialist / Subject Matter Expert (SME)** | _September 2015 – December 2017_
 
-- Performed end-to-end frontend and backend analysis, validation, and XML data manipulation.
-- Developed backend API test scripts and validations using Parasoft SOAtest.
-- Acted as primary point of contact for clients and project owners, managing team task assignments and mentoring incoming technical resources.
+- Served as SQA SME leading UAT, regression, and A/B testing for enterprise software releases.
+- Mapped business requirements to technical test suites, driving Technical Readiness Reviews (TRR), defect prioritization, and production escape analysis.
+
+### **Stefanini Group (Embedded at IBM Brasil)**
+
+**Software Quality Analyst** | _April 2013 – September 2015_
+
+- Executed end-to-end API and GUI testing, XML/JSON schema validation, and database verification.
+- Developed backend API automated test scripts and validations using Parasoft SOAtest.
 
 ### **Instituto de Pesquisas Eldorado**
 
-**Junior Technical Assistant / Auxiliary Technician / Trainee** | _September 2009 – October 2012_
+**Junior Assistant / Tech Trainee** | _September 2009 – October 2012_
 
-- Executed automated processes and drafted comprehensive project documentation.
-- Participated in the Android OS core test execution team for mobile phone platforms.
+- Performed hands-on mobile quality assurance and performance tracking for TouchWiz (Samsung Android OS) platforms.
 
 ---
 
 ## **Education**
 
-- **Bachelor of Information Systems** | Metrocamp Veris IBTA (2012 - 2015)
-- **Bachelor of Computer Science** | Instituição Paulista de Ensino e Pesquisa - IPEP (2010 - 2012)
+- **B.S. in Information Systems** | Metrocamp Veris IBTA _(2012 – 2015)_
+- **B.S. in Computer Science** | Instituição Paulista de Ensino e Pesquisa - IPEP _(2010 – 2012)_
 
 ---
 
